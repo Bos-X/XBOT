@@ -26,7 +26,7 @@ with a lot of Special Features.
 You can find the list of available commands
 with klik 👉 /help or button below
 ╾─────────────────────╼
- Maintained by [Akmalll l nya 3](t.me/Si_Akmal)
+ Maintained by [Anu](t.me/NadaMusiBot)
 ━━━━━━━━━━━━━━━━━━━━━━━
 """
 
@@ -35,25 +35,25 @@ Hey there! My name is *{}*.
 I'm a part of Eagle Union.
 Have a look at the following for an idea of some of \
 the things I can help you with.
-I'm managed by [°IᎷ▸ᷝᷟ͢ƒiηɇͥ ͫ། ツ](https://t.me/Si_Akmal)
+I'm managed by [Anu](https://t.me/hilihbicih2)
 *Main* commands available:
- - /start: start the bot
- - /help: PM's you this message.
- - /help <module name>: PM's you info about that module.
- - /donate: information about how to donate!
- - /settings:
-   - in PM: will send you your settings for all supported modules.
-   - in a group: will redirect you to pm, with all that chat's settings.
+ 🐍 /start: start the bot
+ 🐍 /help: PM's you this message.
+ 🐍 /help <module name>: PM's you info about that module.
+ 🐍 /donate: information about how to donate!
+ 🐍 /settings:
+   ♦ in PM: will send you your settings for all supported modules.
+   ♦ in a group: will redirect you to pm, with all that chat's settings.
 {}
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-LYNDA_IMG = "https://telegra.ph/file/a168ef2add4217c705378.jpg"
+LYNDA_IMG = "https://telegra.ph/file/61f264cdcc1594bb7079b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 XBOT is hosted on one of Digital Ocean Servers. \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; [PayPal](paypal.me/PaulSonOfLars), or [Monzo](monzo.me/paulnionvestergaardlarsen)."""
+There are two ways of supporting him; [PayPal](https://t.me/hilihbicih2), or [Anu](https://t.me/NadaMusicBot)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -141,9 +141,9 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             buttons = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="✨ Add Me To Your Group ✨", url="https://t.me/NakanoMiku_Xbot?startgroup=new")],
-                 [InlineKeyboardButton(text="⚙️ Help", url="https://t.me/NakanoMiku_xbot?start=help"), InlineKeyboardButton(text="join Animlover group", url="https://t.me/Animeeindonesia?connect=connect")],
-                 [InlineKeyboardButton(text="🚫 Gban Logs", url="https://t.me/gbanlogsmiku"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/X_Projectss")]])
+                [[InlineKeyboardButton(text="✨ Add Me To Your Group ✨", url="https://t.me/MitsukiProBot?startgroup=new")],
+                 [InlineKeyboardButton(text="⚙️ Help", url="https://t.me/MitsukiProBot?start=help"), InlineKeyboardButton(text="join Animlover group", url="https://t.me/Animeeindonesia?connect=connect")],
+                 [InlineKeyboardButton(text="🚫 Gban Logs", url="https://t.me/loggermanagebot"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/viraltwittergrup")]])
             message.reply_photo(
                 LYNDA_IMG,
                 PM_START_TEXT.format(
@@ -154,7 +154,7 @@ def start(bot: Bot, update: Update, args: List[str]):
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=buttons)
     else:
-        message.reply_text("Halo Nakano Miku di Sini!!")
+        message.reply_text("Halo Mitsuki di Sini!!")
 
 
 # for test purposes
